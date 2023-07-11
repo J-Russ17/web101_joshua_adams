@@ -1,0 +1,13 @@
+header {
+    width: 850px;
+    height: 175px;
+    background-color: aliceblue;
+}
+
+section {
+    width: 850px;
+    height: 800px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
