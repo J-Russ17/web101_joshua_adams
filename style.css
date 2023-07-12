@@ -4,10 +4,36 @@ header {
     background-color: aliceblue;
 }
 
-section {
+.wrap {
     width: 850px;
     height: 800px;
     background-color: antiquewhite;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 33% 67%;
+}
+
+.left-column {
+    display: grid;
+    grid-column: 1/2;
+    background-color: purple;
+}
+
+#left-rows {
+    display:grid;
+    grid-template-rows: 25% 50% 25%;
+}
+
+article {
+    grid-row: 3/4;
+    background-color: beige;
+}
+
+h2 {
+    border: solid black 2px;
+    text-align: center;
+}
+
+ul {
+    border: solid black 2px;
+    text-align: center;
 }
