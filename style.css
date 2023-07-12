@@ -23,7 +23,18 @@ header {
     grid-template-rows: 25% 50% 25%;
 }
 
-article {
+#socials {
+    grid-row: 1/2;
+    background-color:aquamarine
+}
+
+a {
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+}
+
+#education {
     grid-row: 3/4;
     background-color: beige;
 }
