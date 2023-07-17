@@ -71,6 +71,10 @@ ul {
   padding: 0;
 }
 
+#unicode {
+  list-style: none;
+}
+
 li {
   margin-left: 15px;
   font-family: "Heebo", sans-serif;
@@ -79,6 +83,30 @@ li {
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 0;
+}
+
+#phone::before {
+  content: "\260E";
+  font-size: 150%;
+  margin-right: 10px;
+}
+
+#email::before {
+  content: "\2709";
+  font-size: 150%;
+  margin-right: 9px;
+}
+
+#address::before {
+  content: "\2B89";
+  font-size: 150%;
+  margin-right: 10px;
+}
+
+#website::before {
+  content: "\1F517";
+  font-size: 150%;
+  margin-right: 4px;
 }
 
 #skills {
