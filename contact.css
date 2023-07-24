@@ -1,0 +1,83 @@
+body {
+  background-color: #f5f5dc;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#top {
+  display: flex;
+  justify-content: right;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}
+
+.container {
+  padding-top: 30px;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "mail refer"
+    "dob contact"
+    "comments socials";
+  border-left: solid 2px brown;
+  padding-left: 10%;
+}
+
+#mail {
+  grid-area: mail;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#dob {
+  grid-area: dob;
+}
+
+#comments {
+  grid-area: comments;
+}
+
+textarea {
+  border: none;
+  border-bottom: solid 2px brown;
+  background-color: #f5f5dc;
+}
+
+#refer {
+  grid-area: refer;
+  font-size: 20px;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: contact;
+  font-size: 20px;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  grid-area: socials;
+}
