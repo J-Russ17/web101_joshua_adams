@@ -17,12 +17,23 @@
       <div class="container">
         <div id="mail">
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input
+            onkeyup="inbox(this.value)"
+            type="email"
+            name="email"
+            id="email"
+          />
         </div>
         <div id="dob">
           <p>Want a birthday wish?</p>
           <label for="date">Birthdate</label>
-          <input type="date" name="date" id="date" min="2019-06-10" />
+          <input
+            onkeyup="inbox(this.value)"
+            type="date"
+            name="date"
+            id="date"
+            min="2019-06-10"
+          />
         </div>
         <div id="comments">
           <label for="comments"></label>
@@ -36,13 +47,18 @@
           ><br />
 
           <input type="hidden" name="hidden" value="hi" />
-          <button type="reset">Reset</button>
+          <button onclick="sure()" type="reset">Reset</button>
           <button type="submit">Submit</button>
         </div>
 
         <div id="refer">
           <p>How did you hear about me?</p>
-          <input type="checkbox" name="classmate" id="classmate" />
+          <input
+            onmousedown="check()"
+            type="checkbox"
+            name="classmate"
+            id="classmate"
+          />
           <label for="classmate">Classmate</label><br />
 
           <input type="checkbox" name="resume" id="resume" />
@@ -64,10 +80,13 @@
         </div>
         <div id="socials">
           <p>Check out my:</p>
+          <a onclick="sure()" href="https://twitter.com">Twitter</a><br />
+          <a onclick="sure()" href="https://facebook.com">Facebook</a><br />
+          <a onclick="sure()" href="https://instagram.com">Instagram</a>
         </div>
       </div>
     </form>
 
-    <!-- <script src="scripts.js"></script> -->
+    <script src="scripts.js"></script>
   </body>
 </html>

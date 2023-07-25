@@ -77,7 +77,5 @@ textarea {
 }
 
 #socials {
-  display: flex;
-  align-items: center;
   grid-area: socials;
 }
