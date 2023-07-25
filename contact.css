@@ -79,3 +79,31 @@ textarea {
 #socials {
   grid-area: socials;
 }
+
+@media (max-width: 576px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "image"
+      "mail"
+      "dob"
+      "comments"
+      "refer"
+      "contact"
+      "socials";
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  img {
+    grid-area: image;
+  }
+}

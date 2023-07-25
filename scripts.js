@@ -20,3 +20,4 @@ function check() {
   document.getElementById("classmate")
   console.log("Nice you checked a box!")
 }
+
